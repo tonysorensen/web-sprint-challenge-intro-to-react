@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
+import axios from "axios";
 import './App.css';
 
 const App = () => {
@@ -9,11 +10,23 @@ const App = () => {
   // side effect in a component, you want to think about which state and/or props it should
   // sync up with, if any.
 
+useEffect(() => {
+  axios
+  .get("https://swapi.dev/api/vehicles/")
+  .then(swapiData => {
+    console.log('SWAPI DATA', swapiData)
+  })
+  .catch(error => {
+    console.log('The data was not returned.', error)
+  })
+},[])
+
+
   return (
     <div className="App">
       <h1 className="Header">Characters</h1>
     </div>
-  );
+  )
 }
 
 export default App;
