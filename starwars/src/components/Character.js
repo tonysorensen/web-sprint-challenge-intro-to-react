@@ -2,42 +2,55 @@
 import React from "react";
 import styled from "styled-components";
 
-const Container = styled.div`
-  width: 400px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-`;
 const NewCard = styled.div`
-  background: #3f537e;
+  background: rgba(255, 238, 202, 0.5);
   color: white;
   width: 400px;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
+  height: 350px;
+  margin: 10px 100px;
+  border-radius: 30px;
   justify-content: space-between;
   margin-bottom: 20px;
+`;
+
+const Name = styled.h1`
+  padding-top: 5%;
+  color: #334366;
+`;
+
+const PhysicalTraits = styled.h3`
+  padding-top: 0;
+  color: #7d424c;
+`;
+
+const Traits = styled.ul`
+  font-size: 1.25rem;
+  color: #007aa6;
+`;
+
+const Headers = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 const CharacterCard = (props) => {
   return (
     <>
-      <Container>
-        <h2>{props.name}</h2>
-        <NewCard>
-          <ul>
-            <h4>Physical Traits</h4>
-            <li>Eye Color: {props.eyecolor} </li>
-            <li>Gender: {props.gender}</li>
-            <li>Hair Color: {props.haircolor} </li>
-            <li>Height: {props.height}</li>
-            <li>Mass: {props.mass}</li>
-            <li>Skin Color: {props.skincolor}</li>
-          </ul>
-        </NewCard>
-      </Container>
+      <NewCard>
+        <Headers>
+          <Name>{props.name}</Name>
+          <PhysicalTraits>Physical Traits</PhysicalTraits>
+        </Headers>
+        <Traits>
+          <li>Eye Color: {props.eyecolor} </li>
+          <li>Gender: {props.gender}</li>
+          <li>Hair Color: {props.haircolor} </li>
+          <li>Height: {props.height}</li>
+          <li>Mass: {props.mass}</li>
+          <li>Skin Color: {props.skincolor}</li>
+        </Traits>
+      </NewCard>
     </>
   );
 };

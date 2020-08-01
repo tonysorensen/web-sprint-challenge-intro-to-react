@@ -28,9 +28,9 @@ const App = () => {
   return (
     <>
       <div className="App">
-        <h1 className="Header">What a bunch of Characters</h1>
+        <h1 className="Header">What a bunch of Characters!!!</h1>
       </div>
-      <div className="cardHolder">
+      <div className="Cards">
         {character.map((who) => {
           return (
             <CharacterCard
