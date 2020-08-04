@@ -12,11 +12,19 @@
   font-size: 60px;
   padding: 1% 0;
   margin-bottom: 5%;
-}
+  
+  }
+
 /* write your parent styles in here for your App.js */
 
 .Cards {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+@media (max-width: 600px) {
+.Header{
+  flex-direction: column}
+
 }

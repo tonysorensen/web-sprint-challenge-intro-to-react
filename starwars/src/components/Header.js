@@ -4,8 +4,6 @@ import styled from "styled-components";
 
 const TopBar = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: row;
   }
 `;
 const Logo = styled.img`
@@ -20,6 +18,7 @@ const HeaderTitle = styled.h1`
   margin: 0;
   @media (max-width: 500px) {
     font-size: 2rem;
+    text-align:center
   }
 `;
 
@@ -35,3 +34,6 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
