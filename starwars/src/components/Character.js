@@ -3,7 +3,7 @@ import React from "react";
 import styled from "styled-components";
 
 const NewCard = styled.div`
-  background: rgba(255, 238, 202, 0.5);
+  background: rgba(255, 238, 202, 0.6);
   color: white;
   width: 400px;
   height: 350px;
