@@ -6,15 +6,20 @@ const TopBar = styled.div`
   width: 100%;
   display: flex;
   flex-direction: row;
+  }
 `;
 const Logo = styled.img`
+ @media (max-width: 600px) {
+ width:
+  40%;
 `;
 
 const HeaderTitle = styled.h1`
-
   width: 50%;
   font-size: 4rem;
   margin: 0;
+  @media (max-width: 600px) {
+    font-size: 2rem;
 `;
 
 const Header = () => {
