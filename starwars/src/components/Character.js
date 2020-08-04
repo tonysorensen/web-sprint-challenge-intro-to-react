@@ -11,11 +11,16 @@ const NewCard = styled.div`
   border-radius: 30px;
   justify-content: space-between;
   margin-bottom: 20px;
+  @media (max-width: 500px) {
+    width: 80%
+    height: 30%}
 `;
 
 const Name = styled.h1`
   padding-top: 5%;
   color: #334366;
+  @media (max-width: 500px) {
+    font-size: 2rem};
 `;
 
 const PhysicalTraits = styled.h3`

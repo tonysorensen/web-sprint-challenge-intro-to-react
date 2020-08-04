@@ -9,17 +9,18 @@ const TopBar = styled.div`
   }
 `;
 const Logo = styled.img`
- @media (max-width: 600px) {
- width:
-  40%};
+  @media (max-width: 500px) {
+    width: 40%;
+  }
 `;
 
 const HeaderTitle = styled.h1`
   width: 50%;
   font-size: 4rem;
   margin: 0;
-  @media (max-width: 600px) {
-    font-size: 2rem};
+  @media (max-width: 500px) {
+    font-size: 2rem;
+  }
 `;
 
 const Header = () => {
