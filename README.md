@@ -30,7 +30,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
-React is a UI library, as opposed to a framework like Angular or Vue, used to create complex, modular , interactive user interfaces.
+React is a UI library, as opposed to a framework like Angular or Vue, used to create complex, modular , interactive user interfaces. It solves the problem of the entire page having to be rendered when a change is made to the DOM. React renders only the changes made.
 
 1. Describe component state.
 
@@ -112,6 +112,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's  Repo). **Please don't merge your own pull request**
+- [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` branch (student's Repo). **Please don't merge your own pull request**
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
