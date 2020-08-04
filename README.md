@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+React is a UI library, as opposed to a framework like Angular or Vue, used to create complex, modular , interactive user interfaces.
+
 1. Describe component state.
+
+State is a JS object that contains data. It's used to change how things render on the page. State refers to data that is managed within a component, the initial value is set when the component is mounted, either by the component itself or a prent, but can be changed within the component itself. State cannot be changed by the parent component.
 
 1. Describe props.
 
+Props is also a JS object that contains data. Props is data that is passed to a component and are unchangeable once they are received by a component. Props can be set by a parent component and can set values for child components.
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+A side effect is anything that affects something outside of the scope of the function being called, like fetching data from an API, manipulating the DOM or logging.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 

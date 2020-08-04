@@ -46,8 +46,8 @@ const CharacterCard = (props) => {
           <li>Eye Color: {props.eyecolor} </li>
           <li>Gender: {props.gender}</li>
           <li>Hair Color: {props.haircolor} </li>
-          <li>Height: {props.height}</li>
-          <li>Mass: {props.mass}</li>
+          <li>Height: {props.height} centimeters</li>
+          <li>Mass: {props.mass} kilograms</li>
           <li>Skin Color: {props.skincolor}</li>
         </Traits>
       </NewCard>
